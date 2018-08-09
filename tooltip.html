@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.tooltip {
+  position: relative;
+  width: 300px;
+  min-height: 200px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 7px;
+  background-color: #000000;
+  box-sizing: border-box;    
+  border: 1px solid;
+  color: #ffffff;
+}
+
+
+.tooltip:after {
+  content: "";
+  position: absolute;
+  bottom: -11px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-45deg);
+  width: 20px;
+  height: 20px;
+  background-color: #000000;  
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+  z-index: 1; 
+  }
+	</style>
+</head>
+<body>
+<div class="tooltip">
+  <h3 class="tooltip__title">Lorem ipsum dolor sit amet.</h3>
+  <p class="tooltip__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos dolor doloribus alias, voluptatem necessitatibus nesciunt, nostrum numquam laborum consectetur veritatis reprehenderit vero sed. Nemo nam, eligendi eveniet excepturi nobis accusantium?</p>
+</div>	
+</body>
+</html>
